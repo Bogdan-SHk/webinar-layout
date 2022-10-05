@@ -4,39 +4,46 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>BarberShop</title>
   </head>
   <body>
     <!-- Header -->
     <header>
-      <nav>
-        <a href="./index.html">
-          <img src="./images/logo.svg" alt="logo" />
-        </a>
-        <ul>
-          <li>
-            <a href="">About</a>
-          </li>
-          <li>
-            <a href="">Services and prices</a>
-          </li>
-          <li>
-            <a href="">Barbers</a>
-          </li>
-          <li>
-            <a href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <div>
-        <a href="tel:380441111111">+38 044 111 11 11</a>
-        <button type="button">Online-booking</button>
+      <a class="header-logo" href="./index.html">
+        <img src="./images/logo.svg" alt="logo" />
+      </a>
+      <div class="header-container">
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li>
+              <a class="link" href="">About</a>
+            </li>
+            <li>
+              <a class="link" href="">Services and prices</a>
+            </li>
+            <li>
+              <a class="link" href="">Barbers</a>
+            </li>
+            <li>
+              <a class="link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <a class="link-tel" href="tel:380441111111">+38 044 111 11 11</a>
+          <button class="header-button" type="button">Online-booking</button>
+        </div>
       </div>
     </header>
     <main>
       <!-- Hero -->
       <section class="hero">
-        <ul>
+        <ul class="list">
           <li>
             <a href="" target="_blank" rel="noopener noreferrer nofollow"
               >Instagram</a
@@ -49,7 +56,7 @@
           </li>
         </ul>
         <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
+        <h1 class="hero-title title">BarberShop</h1>
         <p>
           We are experts in trendy men’s haircuts.<br />
           We work quickly, carefully and with style.
@@ -68,7 +75,7 @@
           width="270"
         />
         <p>About</p>
-        <h2>Best Barbershop in your city</h2>
+        <h2 class="title">Best Barbershop in your city</h2>
         <p>
           If you want to add more confidence to your image, you should
           definitely visit us.
@@ -85,8 +92,8 @@
       <!-- Services and prices -->
       <section class="services">
         <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
-        <ul>
+        <h2 class="title">Services and prices</h2>
+        <ul class="list">
           <li>
             <p>Men’s haircut</p>
             <p>from 300 uah.</p>
@@ -104,7 +111,7 @@
             <p>from 200 uah.</p>
           </li>
         </ul>
-        <ul>
+        <ul class="list">
           <li>
             <p>Trainee’s haircut</p>
             <p>from 50 uah.</p>
@@ -126,7 +133,7 @@
       </section>
       <!-- Why-us -->
       <section class="why-us">
-        <ul>
+        <ul class="list">
           <li>
             <span>600</span><sup>+</sup>
             <p>Satisfied customers per day</p>
@@ -145,7 +152,7 @@
           </li>
         </ul>
         <p>Old traditional school</p>
-        <h2>¿Why people come to us?</h2>
+        <h2 class="title">¿Why people come to us?</h2>
         <p>
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
@@ -154,8 +161,8 @@
       <!-- Our barbers -->
       <section class="our-barbers">
         <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul>
+        <h2 class="title">Our barbers</h2>
+        <ul class="list">
           <li>
             <img
               src="./images/barbers-one.jpg"
@@ -164,7 +171,7 @@
             />
             <h3>John Smith</h3>
             <p>Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="" target="_blank" rel="noopener noreferrer nofollow"
                   >Instagram</a
@@ -195,7 +202,7 @@
             />
             <h3>Michele Doe</h3>
             <p>Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="" target="_blank" rel="noopener noreferrer nofollow"
                   >Instagram</a
@@ -226,7 +233,7 @@
             />
             <h3>Alan Black</h3>
             <p>Extreme Barber</p>
-            <ul>
+            <ul class="list">
               <li>
                 <a href="" target="_blank" rel="noopener noreferrer nofollow"
                   >Instagram</a
@@ -255,7 +262,7 @@
       <section class="portfolio">
         <p>In Latin, "barba" means "beard"</p>
         <h2 hidden>Portfolio</h2>
-        <ul>
+        <ul class="list">
           <li>
             <img
               src="./images/portfolio-one.jpg"
@@ -288,13 +295,13 @@
       </section>
       <!-- Online-booking -->
       <section class="online-booking">
-        <h2>Online-booking</h2>
+        <h2 class="title">Online-booking</h2>
       </section>
       <!-- Contacts -->
       <section class="contacts">
-        <h2>Contacts</h2>
+        <h2 class="title">Contacts</h2>
         <address>
-          <ul>
+          <ul class="list">
             <li>
               <a
                 href="https://goo.gl/maps/i13MvGDE2LEqUARb8"
@@ -311,13 +318,13 @@
           </ul>
         </address>
         <p>Working hours</p>
-        <p>Every day from 9:00 to 22:00</p>
+        <p>Every day from <time>09:00</time> to <time>22:00</time></p>
       </section>
     </main>
     <!-- Footer -->
     <footer>
       <p>&copy; Copyright 2020</p>
-      <ul>
+      <ul class="list">
         <li>
           <a href="" target="_blank" rel="noopener noreferrer nofollow"
             >Instagram</a
