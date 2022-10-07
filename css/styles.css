@@ -1,10 +1,13 @@
 :root {
-    --main-background-color: #FFFFFF;
+    --main-white-color: #FFFFFF;
     --accent-color: #FF6C00;
+    --primary-text-color: #303030;
+    --primary-grey-color: #9DA4BD;
+    --secondary-grey-color: #555555;
 }
 
 body {
-    background-color: var(--main-background-color);
+    background-color: var(--main-white-color);
 
     font-family: 'Open Sans', sans-serif;
     letter-spacing: 0.02em;
@@ -21,17 +24,14 @@ body {
     list-style: none;
 }
 
-
-/* rgba(157, 164, 189, 0.6); */
-/* #9DA4BD */
-/* #303030 */
-/* #555555 */
-
 /* Header */
 
 .hero-title {
     font-size: 72px;
     line-height: 1.18;
+
+    color: var(--main-white-color);
+    background-color: teal;
 }
 
 .header-container,
@@ -40,9 +40,28 @@ body {
 }
 
 .header-list .link,
-.link-tel,
+.link-tel {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+
+    color: var(--main-white-color);
+}
+
 .header-button {
-    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    
+    color: var(--main-white-color);
+
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
 }
 
 .header-list .link:hover,
@@ -55,4 +74,289 @@ body {
 .header-button:hover,
 .header-button:focus {
     background-color: var(--accent-color);
+}
+
+/* Hero */
+
+.hero-list .link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+}
+
+.hero-list .link:hover,
+.header-button:focus {
+    color: var(--accent-color);
+}
+
+.hero-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: rgba(157, 164, 189, 0.6);
+}
+.hero-text {
+    font-size: 18px;
+    line-height: 1.67;
+
+    color: var(--primary-grey-color);
+}
+
+/* About */
+
+.about-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: var(--primary-text-color);
+}
+.about-title {
+    color: var(--primary-text-color);
+}
+.about-text-primary {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-grey-color);
+}
+.about-text-secondary {
+    font-size: 14px;
+    line-height: 1.86;
+
+    color: var(--secondary-grey-color);
+}
+.about-button {
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+
+    color: var(--primary-text-color);
+    background-color: var(--main-white-color);
+
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+}
+.about-button:hover,
+.about-button:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+}
+
+/* Services */
+
+.services-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: rgba(157, 164, 189, 0.6);
+}
+.services-title {
+    color: var(--main-white-color);
+    background-color: teal;
+}
+.services-list-left,
+.services-list-right {
+    font-size: 18px;
+    line-height: 1.67;
+
+    color: var(--primary-grey-color);
+}
+.services-button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    
+    color: var(--main-white-color);
+    background-color: teal;
+
+    border: 1px solid #FF6C00;
+    border-radius: 25px;
+}
+.services-button:hover,
+.services-button:focus {
+    background-color: var(--accent-color);
+}
+
+/* Why us */
+
+.number {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.36;
+    letter-spacing: 0.05em;
+
+    color: var(--primary-text-color);
+}
+.sign {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.38;
+
+    color: var(--accent-color);
+}
+.whyus-list-text {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: normal;
+
+    color: var(--primary-text-color);
+}
+.whyus-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: var(--primary-text-color);
+}
+.why-us-title {
+    color: var(--primary-text-color);
+}
+.whyus-text {
+    font-size: 18px;
+    line-height: 1.67;
+
+    color: var(--secondary-grey-color);
+}
+
+/* Our barbers */
+
+.barbers-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: var(--primary-text-color);
+}
+.barbers-title {
+    color: var(--primary-text-color);
+}
+.barber-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+
+    color: var(--primary-text-color);
+}
+.barber-text {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+
+    color: var(--accent-color);
+}
+
+/* Portfolio */
+
+.portfolio-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: var(--primary-text-color);
+}
+
+/* Online-booking */
+
+.booking-title {
+    color: var(--main-white-color);
+    background-color: teal;
+}
+
+/* Contacts */
+
+.contacts-title {
+    color: var(--main-white-color);
+    background-color: teal;
+}
+.contacts-list {
+    font-style: normal;
+}
+.contacts-link {
+    font-weight: 700;
+}   
+.contacts-link,
+.contacts-tel {
+    font-size: 18px;
+    line-height: 1.67;
+    text-decoration: none;
+
+    color: var(--primary-grey-color);
+}
+.contacts-mail {
+    font-size: 18px;
+    line-height: 1.67;
+
+    color: var(--primary-grey-color);
+}
+.contacts-link:hover,
+.contacts-tel:hover,
+.contacts-mail:hover,
+.contacts-link:focus,
+.contacts-tel:focus,
+.contacts-mail:focus {
+    color: var(--accent-color);
+}
+.contacts-text-before {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-transform: uppercase;
+    letter-spacing: normal;
+
+    color: var(--main-white-color);
+    background-color: teal;
+}
+.contacts-text {
+    font-size: 18px;
+    line-height: 1.67;
+    
+    color: var(--primary-grey-color);
+}
+
+/* Footer */
+
+.copyright {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+
+    color: var(--primary-grey-color);
+}
+.footer-list .link {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    text-decoration: none;
+
+    color: var(--primary-text-color);
+}
+.footer-list .link:hover,
+.footer-list .link:focus {
+    color: var(--accent-color);
 }
