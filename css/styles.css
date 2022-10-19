@@ -13,6 +13,19 @@ body {
     letter-spacing: 0.02em;
 }
 
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .title {
     font-family: 'Raleway', sans-serif;
     font-size: 42px;
@@ -21,6 +34,9 @@ body {
 }
 
 .list {
+    padding: 0;
+    margin: 0;
+
     list-style: none;
 }
 
@@ -37,6 +53,20 @@ body {
     overflow: hidden;
 }
 
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 /* Header */
 
 .hero-title {
@@ -47,9 +77,33 @@ body {
     background-color: teal;
 }
 
-.header-container,
+.background-container,
 .header-button {
     background-color: teal;
+}
+
+.background-container {
+    display: flex;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.nav-right {
+    margin-left: auto;
+}
+
+.link-tel {
+    margin-right: 40px;
 }
 
 .header-list .link,
@@ -64,6 +118,9 @@ body {
 }
 
 .header-button {
+    display: inline-block;
+    padding: 12px 20px;
+
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -75,6 +132,8 @@ body {
 
     border: 1px solid var(--accent-color);
     border-radius: 25px;
+
+    cursor: pointer;
 }
 
 .header-list .link:hover,
@@ -123,7 +182,17 @@ body {
 
 /* About */
 
+.container-about {
+    display: flex;
+    padding-right: 100px;
+}
+.container-about img {
+    margin-right: 30px;
+}
+
 .about-text-before {
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -133,9 +202,13 @@ body {
     color: var(--primary-text-color);
 }
 .about-title {
+    margin-bottom: 20px;
+
     color: var(--primary-text-color);
 }
 .about-text-primary {
+    margin-bottom: 20px;
+
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: 0.02em;
@@ -143,12 +216,17 @@ body {
     color: var(--secondary-grey-color);
 }
 .about-text-secondary {
+    margin-bottom: 42px;
+
     font-size: 14px;
     line-height: 1.86;
 
     color: var(--secondary-grey-color);
 }
 .about-button {
+    display: inline-block;
+    padding: 12px 20px;
+
     font-family: inherit;
     font-weight: 600;
     font-size: 12px;
@@ -161,6 +239,8 @@ body {
 
     border: 1px solid var(--accent-color);
     border-radius: 25px;
+
+    cursor: pointer;
 }
 .about-button:hover,
 .about-button:focus {
@@ -171,6 +251,8 @@ body {
 /* Services */
 
 .services-text-before {
+    padding-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -180,17 +262,51 @@ body {
     color: rgba(157, 164, 189, 0.6);
 }
 .services-title {
+    padding-bottom: 44px;
+
     color: var(--main-white-color);
     background-color: teal;
 }
+.services-lists {
+    display: flex;
+    margin-bottom: 44px;
+}
 .services-list-left,
 .services-list-right {
+    flex-basis: calc((100% - 44px) / 2);
+    padding: 30px 21px 30px 20px;
+
     font-size: 18px;
     line-height: 1.67;
 
     color: var(--primary-grey-color);
 }
+.services-list-left {
+    margin-right: 30px;
+}
+.services-list-left .item {
+    display: flex;
+}
+.services-list-left .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.services-list-right .item {
+    display: flex;
+}
+.services-list-right .item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.text-price {
+    margin-left: auto;
+}
+.services-button-container {
+    text-align: center;
+}
 .services-button {
+    display: inline-block;
+    padding: 12px 20px;
+
+
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
@@ -202,6 +318,7 @@ body {
 
     border: 1px solid #FF6C00;
     border-radius: 25px;
+    cursor: pointer;
 }
 .services-button:hover,
 .services-button:focus {
@@ -254,7 +371,13 @@ body {
 
 /* Our barbers */
 
+.our-barbers {
+    background-color: #F7F7F7;
+}
+
 .barbers-text-before {
+    padding-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -264,9 +387,20 @@ body {
     color: var(--primary-text-color);
 }
 .barbers-title {
+    padding-bottom: 44px;
+
     color: var(--primary-text-color);
 }
+.barbers-list {
+    display: flex;
+    gap: 30px;
+}
+.barber {
+    padding: 30px 82px 0 82px;
+}
 .barber-name {
+    padding-bottom: 8px;
+
     font-weight: 400;
     font-size: 18px;
     line-height: 1.39;
@@ -275,11 +409,29 @@ body {
     color: var(--primary-text-color);
 }
 .barber-text {
+    padding-bottom: 30px;
+
     font-size: 14px;
     line-height: 1.36;
     text-align: center;
 
     color: var(--accent-color);
+}
+.barber-social-list {
+    display: flex;
+    gap: 10px;
+}
+.barber-social-list .item {
+    padding: 12px;
+    flex-basis: calc((100% - 30px) / 4);
+    max-height: 44px;
+    border-radius: 50%;
+
+    background-color: var(--main-white-color);
+}
+.barber-link:hover,
+.barber-link:focus {
+    fill: var(--accent-color);
 }
 
 /* Portfolio */
