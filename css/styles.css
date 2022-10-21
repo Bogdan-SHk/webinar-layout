@@ -69,6 +69,11 @@ img {
 
 /* Header */
 
+.header-logo {
+    display: block;
+    margin-right: 131px;
+}
+
 .hero-title {
     font-size: 72px;
     line-height: 1.18;
@@ -86,7 +91,6 @@ img {
     display: flex;
     align-items: center;
     padding-top: 40px;
-    padding-left: 100px;
     padding-right: 20px;
 }
 
@@ -150,6 +154,11 @@ img {
 
 /* Hero */
 
+.hero-list {
+    display: flex;
+    gap: 40px;
+}
+
 .hero-list .link {
     font-weight: 600;
     font-size: 11px;
@@ -165,6 +174,8 @@ img {
 }
 
 .hero-text-before {
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -174,6 +185,8 @@ img {
     color: rgba(157, 164, 189, 0.6);
 }
 .hero-text {
+    margin-top: 20px;
+
     font-size: 18px;
     line-height: 1.67;
 
@@ -184,10 +197,12 @@ img {
 
 .container-about {
     display: flex;
-    padding-right: 100px;
 }
 .container-about img {
     margin-right: 30px;
+}
+.about-right {
+    width: 470px;
 }
 
 .about-text-before {
@@ -273,7 +288,7 @@ img {
 }
 .services-list-left,
 .services-list-right {
-    flex-basis: calc((100% - 44px) / 2);
+    flex-basis: 570px;
     padding: 30px 21px 30px 20px;
 
     font-size: 18px;
@@ -327,7 +342,31 @@ img {
 
 /* Why us */
 
+.why-us .container {
+    display: flex;
+    padding-left: 100px;
+}
+
+.why-us-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 130px;
+    width: 370px;
+}
+
+.why-us-list .item {
+    padding: 20px 24px;
+    width: 170px;
+    height: 133px;
+
+    background-color: #F7F7F7;
+    text-align: center;
+}
+
 .number {
+    padding-bottom: 6px;
+
     font-weight: 700;
     font-size: 42px;
     line-height: 1.36;
@@ -342,6 +381,9 @@ img {
 
     color: var(--accent-color);
 }
+.whyus-right {
+    width: 500px;
+}
 .whyus-list-text {
     font-weight: 600;
     font-size: 11px;
@@ -351,6 +393,8 @@ img {
     color: var(--primary-text-color);
 }
 .whyus-text-before {
+    padding-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -360,6 +404,8 @@ img {
     color: var(--primary-text-color);
 }
 .why-us-title {
+    padding-bottom: 20px;
+
     color: var(--primary-text-color);
 }
 .whyus-text {
@@ -421,12 +467,15 @@ img {
     display: flex;
     gap: 10px;
 }
-.barber-social-list .item {
-    padding: 12px;
-    flex-basis: calc((100% - 30px) / 4);
-    max-height: 44px;
-    border-radius: 50%;
 
+.barber-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;;
+    height: 44px;
+    border-radius: 50%;
+    
     background-color: var(--main-white-color);
 }
 .barber-link:hover,
@@ -437,6 +486,8 @@ img {
 /* Portfolio */
 
 .portfolio-text-before {
+    margin-bottom: 44px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -444,6 +495,10 @@ img {
     letter-spacing: normal;
 
     color: var(--primary-text-color);
+}
+.portfolio-list {
+    display: flex;
+    gap: 30px;
 }
 
 /* Online-booking */
@@ -456,11 +511,18 @@ img {
 /* Contacts */
 
 .contacts-title {
+    margin-bottom: 40px;
+
     color: var(--main-white-color);
     background-color: teal;
 }
 .contacts-list {
+    margin-bottom: 70px;
+
     font-style: normal;
+}
+.contacts-list .item:not(:last-child) {
+    margin-bottom: 20px;
 }
 .contacts-link {
     font-weight: 700;
@@ -488,6 +550,8 @@ img {
     color: var(--accent-color);
 }
 .contacts-text-before {
+    margin-bottom: 20px;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
@@ -506,6 +570,16 @@ img {
 
 /* Footer */
 
+.fopter-section {
+    padding-top: 42px;
+    padding-bottom: 70px;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .copyright {
     font-weight: 600;
     font-size: 11px;
@@ -513,7 +587,13 @@ img {
 
     color: var(--primary-grey-color);
 }
+.footer-list {
+    display: flex;
+    gap: 40px;
+}
 .footer-list .link {
+    display: block;
+
     font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
