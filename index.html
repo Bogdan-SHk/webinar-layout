@@ -17,7 +17,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="page-header">
       <div class="container">
         <div class="background-container">
           <a class="header-logo" href="./index.html">
@@ -49,33 +49,37 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <div class="container">
-          <ul class="hero-list list">
-            <li class="item">
-              <a
-                class="link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Instagram</a
-              >
-            </li>
-            <li class="item">
-              <a
-                class="link"
-                href=""
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >Youtube</a
-              >
-            </li>
-          </ul>
-          <p class="hero-text-before">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title title">BarberShop</h1>
-          <p class="hero-text">
-            We are experts in trendy men’s haircuts.<br />
-            We work quickly, carefully and with style.
-          </p>
+        <div class="hero-container container">
+          <div class="hero-left">
+            <ul class="hero-list list">
+              <li class="item">
+                <a
+                  class="link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Instagram</a
+                >
+              </li>
+              <li class="item">
+                <a
+                  class="link"
+                  href=""
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="hero-right">
+            <p class="hero-text-before">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title title">BarberShop</h1>
+            <p class="hero-text">
+              We are experts in trendy men’s haircuts.<br />
+              We work quickly, carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
       <!-- About -->
@@ -119,38 +123,38 @@
           <div class="services-lists">
             <ul class="services-list-left list">
               <li class="item">
-                <p>Men’s haircut</p>
-                <p class="text-price">from 300 uah.</p>
+                <span class="text-price">Men’s haircut</span>
+                from 300 uah.
               </li>
               <li class="item">
-                <p>Beard trim</p>
-                <p class="text-price">from 300 uah.</p>
+                <span class="text-price">Beard trim</span>
+                from 300 uah.
               </li>
               <li class="item">
-                <p>Mustache trim</p>
-                <p class="text-price">from 200 uah.</p>
+                <span class="text-price">Mustache trim</span>
+                from 200 uah.
               </li>
               <li class="item">
-                <p>Straight razor shave</p>
-                <p class="text-price">from 200 uah.</p>
+                <span class="text-price">Straight razor shave</span>
+                from 200 uah.
               </li>
             </ul>
             <ul class="services-list-right list">
               <li class="item">
-                <p>Trainee’s haircut</p>
-                <p class="text-price">from 50 uah.</p>
+                <span class="text-price">Trainee’s haircut</span>
+                from 50 uah.
               </li>
               <li class="item">
-                <p>Haircut under the nozzle</p>
-                <p class="text-price">from 200 uah.</p>
+                <span class="text-price">Haircut under the nozzle</span>
+                from 200 uah.
               </li>
               <li class="item">
-                <p>Children’s haircut (0-12 y.o.)</p>
-                <p class="text-price">from 300 uah.</p>
+                <span class="text-price">Children’s haircut (0-12 y.o.)</span>
+                from 300 uah.
               </li>
               <li class="item">
-                <p>Camouflage of gray hair</p>
-                <p class="text-price">from 200 uah.</p>
+                <span class="text-price">Camouflage of gray hair</span>
+                from 200 uah.
               </li>
             </ul>
           </div>
@@ -169,7 +173,7 @@
               <span class="number">600</span><sup class="sign">+</sup>
               <p class="whyus-list-text">Satisfied customers per day</p>
             </li>
-            <li class="item">
+            <li class="item-position item">
               <span class="number">50</span><sup class="sign">+</sup>
               <p class="whyus-list-text">Awards for excellent service</p>
             </li>
@@ -177,7 +181,7 @@
               <span class="number">20</span><sup class="sign">+</sup>
               <p class="whyus-list-text">Kyiv’s best barbers</p>
             </li>
-            <li class="item">
+            <li class="item-position item">
               <span class="number">100</span><sup class="sign">+</sup>
               <p class="whyus-list-text">Gifts for regular customers</p>
             </li>
@@ -407,42 +411,59 @@
           </ul>
         </div>
       </section>
-      <!-- Online-booking -->
-      <section class="online-booking">
-        <h2 class="booking-title title">Online-booking</h2>
-      </section>
-      <!-- Contacts -->
-      <section class="contacts">
-        <h2 class="contacts-title title">Contacts</h2>
-        <address>
-          <ul class="contacts-list list">
-            <li class="item">
-              <a
-                class="contacts-link"
-                href="https://goo.gl/maps/i13MvGDE2LEqUARb8"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                >st. Vasilkovaya, 7A<br />
-                Kiev, 08132</a
-              >
-            </li>
-            <li class="item">
-              <a class="contacts-tel" href="tel:380441111111"
-                >+38 044 111 11 11</a
-              >
-            </li>
-            <li class="item">
-              <a class="contacts-mail" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
-        </address>
-        <p class="contacts-text-before">Working hours</p>
-        <p class="contacts-text">
-          Every day from <time>09:00</time> to <time>22:00</time>
-        </p>
-      </section>
+      <!-- Booking & Contacts -->
+      <div class="contacts-group">
+        <div class="contatcs-group-container container">
+          <section class="online-booking section">
+            <h2 class="booking-title title">Online-booking</h2>
+          </section>
+          <section class="contacts section">
+            <h2 class="contacts-title title">Contacts</h2>
+            <address>
+              <ul class="contacts-list list">
+                <li class="item">
+                  <a
+                    class="contacts-link"
+                    href="https://goo.gl/maps/i13MvGDE2LEqUARb8"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    <svg
+                      class="contacts-icon contacts-icon-top"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./images/icons.svg#icon-map-pin"></use>
+                    </svg>
+                    st. Vasilkovaya, 7A <br />
+                    Kiev, 08132s
+                  </a>
+                </li>
+                <li class="item">
+                  <a class="contacts-tel" href="tel:380441111111">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-phone"></use>
+                    </svg>
+                    +38 044 111 11 11</a
+                  >
+                </li>
+                <li class="item">
+                  <a class="contacts-mail" href="mailto:barbershop@email.com">
+                    <svg class="contacts-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    barbershop@email.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <p class="contacts-text-before">Working hours</p>
+            <p class="contacts-text">
+              Every day from <time>09:00</time> to <time>22:00</time>
+            </p>
+          </section>
+        </div>
+      </div>
     </main>
     <!-- Footer -->
     <footer class="fopter-section">
@@ -451,7 +472,7 @@
         <ul class="footer-list list">
           <li>
             <a
-              class="link"
+              class="first-link link"
               href=""
               target="_blank"
               rel="noopener noreferrer nofollow"
