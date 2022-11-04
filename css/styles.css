@@ -155,7 +155,25 @@ img {
     width: 100px;
     height: 100%;
 }
+.hero-list {
+    display: flex;
+    align-items: center;
+    margin-top: 370px;
+    gap: 40px;
 
+    transform: rotate(-90deg);
+}
+
+.hero-list .first-link::before {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+
+    background-color: var(--primary-text-color);
+}
+        
 .hero-right {
     flex-grow: 1;
     padding: 272px 0 208px 100px;
@@ -170,11 +188,6 @@ img {
     line-height: 1.18;
 
     color: var(--main-white-color);
-}
-
-.hero-list {
-    display: flex;
-    gap: 40px;
 }
 
 .hero-list .link {
