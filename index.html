@@ -416,6 +416,44 @@
         <div class="contatcs-group-container container">
           <section class="online-booking section">
             <h2 class="booking-title title">Online-booking</h2>
+            <form class="form-booking">
+              <div class="form-booking__input-container">
+                <div class="form-booking__field">
+                  <label class="form-booking__label" for="user_name"
+                    >Name*</label
+                  >
+                  <input
+                    class="form-booking__input"
+                    type="text"
+                    name="name"
+                    id="user_name"
+                  />
+                </div>
+                <div class="form-booking__field">
+                  <label class="form-booking__label" for="user_tel"
+                    >Phone*</label
+                  >
+                  <input
+                    class="form-booking__input"
+                    type="tel"
+                    name="tel"
+                    id="user_tel"
+                  />
+                </div>
+              </div>
+              <div class="form-booking__field">
+                <label class="form-booking__label" for="user_feedback"
+                  >Message</label
+                >
+                <textarea
+                  class="form-booking__textarea"
+                  name="feedback"
+                  rows="5"
+                  id="user_feedback"
+                ></textarea>
+              </div>
+              <button class="form-booking__button" type="submit">send</button>
+            </form>
           </section>
           <section class="contacts section">
             <h2 class="contacts-title title">Contacts</h2>
